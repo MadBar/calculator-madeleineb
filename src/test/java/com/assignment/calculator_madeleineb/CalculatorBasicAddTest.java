@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 //import java.util.logging.Logger;
 import org.junit.Test;
 
-public class CalculatorBasicTest {
+public class CalculatorBasicAddTest {
 	CalculatorBasic cb = new CalculatorBasic();
 	Random r = new Random();
 	static final Logger LOG = Logger
