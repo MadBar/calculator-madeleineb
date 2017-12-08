@@ -23,3 +23,4 @@ It still breaks after removing the BP..!!
   My Answer (By debugging. Setting a breakP at a temporary If statement to stop when second randomed 0):
   Here firstNr is always 0, so when getting randomed second 0, inside the method - it checks for Infinite, and when two 0 the result becomes NaN..! So maybe add a check for NaN in that statement aswell..
   1. 	//QUESTION: Do we really need try catch? Program never seems so access it? Divition tests
+1. //QUESTION: Is ther ANY point to have a loop here? Maybe? testDivideSecondZero
