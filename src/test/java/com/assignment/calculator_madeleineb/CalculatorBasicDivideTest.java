@@ -14,6 +14,9 @@ public class CalculatorBasicDivideTest {
 			.getLogger(CalculatorBasic.class.getName());
 	DecimalFormat df = new DecimalFormat("0.00");
 
+	// A copy of following test testDividePositive. Alteration. This makes
+	// possible to test more cases looking for a case when secondNr get set to
+	// 0.00 causing the program to break. To test if it indeed breaks when dividing by 0.
 	@Test
 	public void testDividePositive() {
 
@@ -21,9 +24,9 @@ public class CalculatorBasicDivideTest {
 		double secondRandomNr = 0;
 		double result = 0;
 		double resultFromMethod = 0;
-		// double roundMethodRes = 0;
 
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; (i < 1000
+				|| secondRandomNr == 0.00); i++) {
 			firstRandomNr = Double.valueOf(
 					df.format(r.nextDouble() * 10));
 			secondRandomNr = Double.valueOf(
