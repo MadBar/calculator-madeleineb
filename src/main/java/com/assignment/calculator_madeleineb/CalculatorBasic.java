@@ -23,7 +23,7 @@ public class CalculatorBasic
 	}
 
 	public double divide(double firstNr, double secondNr) {
-
+		double roundMethodRes = 0;
 		double result = firstNr / secondNr;
 		if (Double.isInfinite(result)) {
 			System.out.println("Can't devide by 0");
@@ -31,7 +31,8 @@ public class CalculatorBasic
 			return -0.123456789;
 		}
 
-		return result;
+		roundMethodRes = Math.round(result*100.00)/100.00;
+		return roundMethodRes;
 
 	}
 
