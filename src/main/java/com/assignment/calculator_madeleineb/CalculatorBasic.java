@@ -25,14 +25,28 @@ public class CalculatorBasic
 	public double divide(double firstNr, double secondNr) {
 		double roundMethodRes = 0;
 		double result = firstNr / secondNr;
+		
+		//Test for next line: 
 		if (Double.isInfinite(result)) {
+//		if (Double.isInfinite(result)) {
+			
 			System.out.println("Can't devide by 0");
 			// result = -100;
 			return -0.123456789;
 		}
+		if (Double.isNaN(result)) {
+//			if (Double.isInfinite(result)) {
+				
+				System.out.println("Can't devide two 0's");
+				// result = -100;
+				return -0.123456789;
+			}
 
-		roundMethodRes = Math.round(result*100.00)/100.00;
-		return roundMethodRes;
+		
+		return roundMethodRes = Math.round(result*100.00)/100.00;
+		
+//		roundMethodRes = Math.round(result*100.00)/100.00;
+//		return roundMethodRes;
 
 	}
 
