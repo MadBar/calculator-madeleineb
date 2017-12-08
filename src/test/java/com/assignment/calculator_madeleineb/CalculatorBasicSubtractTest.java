@@ -1,7 +1,6 @@
 package com.assignment.calculator_madeleineb;
 
 import static org.junit.Assert.*;
-//import static org.junit.Assert.assertEquals;
 import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.logging.Logger;
