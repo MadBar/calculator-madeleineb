@@ -375,20 +375,32 @@ public class CalculatorAdvancedTest {
 		}
 	}
 
-	//Seems to not be able to raise by a negative decimal..? 
+	// Seems to not be able to raise by a negative decimal..?
+	// To Do!!: Test other methods here that could give a negative decimal!
 	@Test
 	public void testPowYNegative() {
 
 		double nrToRaise = 0.0;
-		double powNumber = -0.4;
+		double powNumber = 0.0;
 		double result = 0.0;
 		double resultFromMethod = 0.0;
 
 		for (int i = 0; i < 50; i++) {
 			nrToRaise = Double.valueOf(
 					df.format(r.nextDouble() * -10));
-		//	powNumber = Double.valueOf(
-		//			df.format(r.nextDouble() * -10));
+
+			// Has to be without decimals when negative powNr.
+			// powNumber = Double.valueOf(
+			// df.format(r.nextDouble() * -10));
+
+			// doesn't work
+			// powNumber = Double.valueOf(
+			// df.format(r.nextInt()-10));
+
+			// Test: double and round to integer..?
+			powNumber =Math.round(Double.valueOf(
+					df.format(r.nextDouble() * -10)));
+
 			result = Math.pow(nrToRaise, powNumber);
 			resultFromMethod = ca.powY(nrToRaise,
 					powNumber);
