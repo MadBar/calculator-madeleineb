@@ -5,7 +5,7 @@ public class CalculatorAdvanced
 
 	public double pow2(double number) {
 		
-		return number*number;
+		return Math.round((number*number)*100)/100.00;
 	}
 
 	public double pow3(double number) {
