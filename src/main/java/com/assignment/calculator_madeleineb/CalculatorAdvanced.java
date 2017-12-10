@@ -31,7 +31,9 @@ public class CalculatorAdvanced
 
 	public double powY(double numberToRaise,
 			double powNumber) {
-		return Math.pow(numberToRaise, powNumber);
+		return Math.round((Math.pow(numberToRaise, powNumber))*100)/100.00;
+		
+//		return Math.pow(numberToRaise, powNumber);
 	}
 
 }

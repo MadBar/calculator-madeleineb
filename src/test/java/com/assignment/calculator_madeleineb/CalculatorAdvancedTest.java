@@ -80,7 +80,7 @@ public class CalculatorAdvancedTest {
 		assertEquals(resultFromMethod, result, 0);
 
 	}
-	
+
 	@Test
 	public void testPow3Positive() {
 
@@ -212,7 +212,7 @@ public class CalculatorAdvancedTest {
 		assertEquals(resultFromMethod, result, 0);
 
 	}
-	
+
 	@Test
 	public void testPow5Positive() {
 
@@ -278,7 +278,7 @@ public class CalculatorAdvancedTest {
 		assertEquals(resultFromMethod, result, 0);
 
 	}
-	
+
 	@Test
 	public void testPow6Positive() {
 
@@ -344,6 +344,83 @@ public class CalculatorAdvancedTest {
 		assertEquals(resultFromMethod, result, 0);
 
 	}
-	
-	
+
+	@Test
+	public void testPowYPositive() {
+
+		double nrToRaise = 0.0;
+		double powNumber = 0.0;
+		double result = 0.0;
+		double resultFromMethod = 0.0;
+
+		for (int i = 0; i < 50; i++) {
+			nrToRaise = Double.valueOf(
+					df.format(r.nextDouble() * 10));
+			powNumber = Double.valueOf(
+					df.format(r.nextDouble() * 10));
+			result = Math.pow(nrToRaise, powNumber);
+			resultFromMethod = ca.powY(nrToRaise,
+					powNumber);
+
+			LOG.info(
+					"Testing the method powY positive with: "
+							+ nrToRaise + " to raise, and: "
+							+ powNumber
+							+ " to power by. Result from test: "
+							+ result
+							+ ", result from method: "
+							+ resultFromMethod);
+			assertEquals(resultFromMethod, result, 1);
+
+		}
+	}
+
+	//Seems to not be able to raise by a negative decimal..? 
+	@Test
+	public void testPowYNegative() {
+
+		double nrToRaise = 0.0;
+		double powNumber = -0.4;
+		double result = 0.0;
+		double resultFromMethod = 0.0;
+
+		for (int i = 0; i < 50; i++) {
+			nrToRaise = Double.valueOf(
+					df.format(r.nextDouble() * -10));
+		//	powNumber = Double.valueOf(
+		//			df.format(r.nextDouble() * -10));
+			result = Math.pow(nrToRaise, powNumber);
+			resultFromMethod = ca.powY(nrToRaise,
+					powNumber);
+
+			LOG.info(
+					"Testing the method powY negative with: "
+							+ nrToRaise + " to raise, and: "
+							+ powNumber
+							+ " to power by. Result from test: "
+							+ result
+							+ ", result from method: "
+							+ resultFromMethod);
+			assertEquals(resultFromMethod, result, 1);
+
+		}
+	}
+
+	@Test
+	public void testPow6Zero() {
+
+		double nr = 0.0;
+		double result = 0.0;
+		double resultFromMethod = 0.0;
+
+		result = Math.pow(nr, 6);
+		resultFromMethod = ca.pow6(nr);
+
+		LOG.info("Testing the method pow6 zero with: " + nr
+				+ ". Result from test: " + result
+				+ ", result from method: "
+				+ resultFromMethod);
+		assertEquals(resultFromMethod, result, 0);
+
+	}
 }
