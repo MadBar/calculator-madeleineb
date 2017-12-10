@@ -147,4 +147,69 @@ public class CalculatorAdvancedTest {
 
 	}
 
+	@Test
+	public void testPow4Positive() {
+
+		double nr = 0.0;
+		double result = 0.0;
+		double resultFromMethod = 0.0;
+
+		for (int i = 0; i < 50; i++) {
+			nr = Double.valueOf(
+					df.format(r.nextDouble() * 10));
+			result = Math.pow(nr, 4);
+			resultFromMethod = ca.pow4(nr);
+
+			LOG.info(
+					"Testing the method pow4 positive with: "
+							+ nr + ". Result from test: "
+							+ result
+							+ ", result from method: "
+							+ resultFromMethod);
+			assertEquals(resultFromMethod, result, 1);
+
+		}
+	}
+
+	@Test
+	public void testPow4Negative() {
+
+		double nr = 0.0;
+		double result = 0.0;
+		double resultFromMethod = 0.0;
+
+		for (int i = 0; i < 50; i++) {
+			nr = Double.valueOf(
+					df.format(r.nextDouble() * -10));
+			result = Math.pow(nr, 4);
+			resultFromMethod = ca.pow4(nr);
+
+			LOG.info(
+					"Testing the method pow4 negative with: "
+							+ nr + ". Result from test: "
+							+ result
+							+ ", result from method: "
+							+ resultFromMethod);
+			assertEquals(resultFromMethod, result, 1);
+
+		}
+	}
+
+	@Test
+	public void testPow4Zero() {
+
+		double nr = 0.0;
+		double result = 0.0;
+		double resultFromMethod = 0.0;
+
+		result = Math.pow(nr, 4);
+		resultFromMethod = ca.pow4(nr);
+
+		LOG.info("Testing the method pow4 zero with: " + nr
+				+ ". Result from test: " + result
+				+ ", result from method: "
+				+ resultFromMethod);
+		assertEquals(resultFromMethod, result, 0);
+
+	}
 }

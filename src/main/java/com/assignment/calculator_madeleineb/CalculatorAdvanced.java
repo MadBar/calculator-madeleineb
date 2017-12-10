@@ -15,7 +15,8 @@ public class CalculatorAdvanced
 	}
 
 	public double pow4(double number) {
-		return Math.pow(number, 4);
+		return Math.round((Math.pow(number, 4))*100)/100.00;
+		
 	}
 
 	public double pow5(double number) {
