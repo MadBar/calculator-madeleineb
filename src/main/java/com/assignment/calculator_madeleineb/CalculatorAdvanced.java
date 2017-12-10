@@ -20,11 +20,13 @@ public class CalculatorAdvanced
 	}
 
 	public double pow5(double number) {
-		return Math.pow(number, 5);
+		return Math.round((Math.pow(number, 5))*100)/100.00;
+		
 	}
 
 	public double pow6(double number) {
-		return Math.pow(number, 6);
+		return Math.round((Math.pow(number, 6))*100)/100.00;
+		
 	}
 
 	public double powY(double numberToRaise,
