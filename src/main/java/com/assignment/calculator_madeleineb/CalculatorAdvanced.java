@@ -10,7 +10,8 @@ public class CalculatorAdvanced
 
 	public double pow3(double number) {
 		
-		return Math.pow(number, 3);
+		return Math.round((Math.pow(number, 3))*100)/100.00;
+		//return Math.pow(number, 3);
 	}
 
 	public double pow4(double number) {
