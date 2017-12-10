@@ -28,12 +28,18 @@ public class CalculatorAdvanced
 		return Math.round((Math.pow(number, 6))*100)/100.00;
 		
 	}
-
-	public double powY(double numberToRaise,
-			double powNumber) {
-		return Math.round((Math.pow(numberToRaise, powNumber))*100)/100.00;
+	
+	public double pow7(double number) {
+		return Math.round((Math.pow(number, 7))*100)/100.00;
 		
-//		return Math.pow(numberToRaise, powNumber);
 	}
+
+	//Not functional yet
+//	public double powY(double numberToRaise,
+//			double powNumber) {
+//		return Math.round((Math.pow(numberToRaise, powNumber))*100)/100.00;
+//		
+////		return Math.pow(numberToRaise, powNumber);
+//	}
 
 }

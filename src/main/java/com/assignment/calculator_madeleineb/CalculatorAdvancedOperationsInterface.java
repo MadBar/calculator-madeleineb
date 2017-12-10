@@ -10,6 +10,8 @@ public interface CalculatorAdvancedOperationsInterface {
 	double pow5(double number);
 
 	double pow6(double number);
+	
+	double pow7(double number);
 
-	double powY(double numberToRaise, double powNumber);
+	//double powY(double numberToRaise, double powNumber);
 }

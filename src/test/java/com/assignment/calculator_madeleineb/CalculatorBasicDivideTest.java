@@ -70,7 +70,7 @@ public class CalculatorBasicDivideTest {
 
 		// for (int i = 0; (i < 3000
 		// || secondRandomNr == 0.00); i++) {
-		for (int i = 0; i < 3000; i++) {
+		for (int i = 0; i < 50; i++) {
 			firstRandomNr = Double.valueOf(
 					df.format(r.nextDouble() * 10));
 			secondRandomNr = Double.valueOf(
@@ -133,7 +133,7 @@ public class CalculatorBasicDivideTest {
 
 		// for (int i = 0; (i < 3000
 		// || secondRandomNr == 0.00); i++) {
-		for (int i = 0; i < 3000; i++) {
+		for (int i = 0; i < 50; i++) {
 			firstRandomNr = Double.valueOf(
 					df.format(r.nextDouble() * -10));
 			secondRandomNr = Double.valueOf(
@@ -182,7 +182,7 @@ public class CalculatorBasicDivideTest {
 
 		// for (int i = 0; (i < 3000
 		// || secondRandomNr == 0.00); i++) {
-		for (int i = 0; i < 3000; i++) {
+		for (int i = 0; i < 50; i++) {
 			secondRandomNr = Double.valueOf(
 					df.format(r.nextDouble() * 10));
 
@@ -233,7 +233,7 @@ public class CalculatorBasicDivideTest {
 		double resultFromMethod = 0;
 
 		// QUESTION: Is ther ANY point to have a loop here? Maybe?
-		for (int i = 0; i < 3000; i++) {
+		for (int i = 0; i < 50; i++) {
 			firstRandomNr = Double.valueOf(
 					df.format(r.nextDouble() * 10));
 
