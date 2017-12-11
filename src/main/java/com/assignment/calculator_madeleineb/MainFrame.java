@@ -16,7 +16,11 @@ public class MainFrame {
 
 	//Why do they get the property Final? Auto.
 	private JFrame frmMadbarCalculator = new JFrame();
-	private final JTextField textField = new JTextField();
+	private final JLabel lblPickNr = new JLabel("Fill the two fields below with two numbers you wish to operate");
+	private final JLabel lblOperation = new JLabel("Chose operation to perform");
+	private final JTextField textField1Nr = new JTextField();
+	private final JTextField textField2Nr = new JTextField();
+	
 	private final JButton btnPlus = new JButton("+");
 	private final JButton btnSubt = new JButton("-");
 	private final JButton btnDivi = new JButton("/");
@@ -28,7 +32,9 @@ public class MainFrame {
 	private final JButton btnPow5 = new JButton("x5");
 	private final JButton btnPow6 = new JButton("x6");
 	private final JButton btnPow7 = new JButton("x7");
-	private final JButton btnEqual = new JButton("=");
+	
+	private final JLabel lblResult = new JLabel("Result: ");
+	private final JTextField textFieldResult = new JTextField();
 	
 
 	/**
@@ -52,12 +58,6 @@ public class MainFrame {
 	 * Create the application.
 	 */
 	public MainFrame() {
-		textField.setToolTipText("insert number");
-		textField.setHorizontalAlignment(SwingConstants.RIGHT);
-		textField.setFont(new Font("Tahoma", Font.PLAIN, 24));
-		textField.setText("0");
-		textField.setBounds(10, 11, 191, 47);
-		textField.setColumns(10);
 		initialize();
 		addComponents();
 		addActionListeners();
@@ -69,40 +69,53 @@ public class MainFrame {
 	private void initialize() {
 		// frmMadbarCalculator = new JFrame();
 
-		// Properties of frame
+		// Properties of Frame
 		frmMadbarCalculator.setTitle("MadBar Calculator");
-		frmMadbarCalculator.setBounds(100, 100, 228, 264);
+		frmMadbarCalculator.setBounds(100, 100, 366, 304);
 		frmMadbarCalculator.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmMadbarCalculator.getContentPane().setLayout(null);
 		frmMadbarCalculator.setVisible(true);
-		btnPlus.setFont(new Font("Tahoma", Font.PLAIN, 8));
+		
+		// Properties of Text Fields
+		textFieldResult.setEditable(false);
+		textFieldResult.setBounds(60, 218, 263, 20);
+		textFieldResult.setColumns(10);
+		textField1Nr.setToolTipText("insert number");
+		textField1Nr.setHorizontalAlignment(SwingConstants.RIGHT);
+		textField1Nr.setFont(new Font("Tahoma", Font.PLAIN, 24));
+		textField1Nr.setBounds(20, 38, 141, 40);
+		textField1Nr.setColumns(10);
+		textField2Nr.setToolTipText("insert number");
+		textField2Nr.setHorizontalAlignment(SwingConstants.RIGHT);
+		textField2Nr.setFont(new Font("Tahoma", Font.PLAIN, 24));
+		textField2Nr.setColumns(10);
+		textField2Nr.setBounds(171, 38, 147, 40);
 
 		// Properties of basic buttons
-		btnPlus.setBounds(161, 69, 40, 40);
-		btnSubt.setBounds(111, 69, 40, 40);
-		btnDivi.setBounds(61, 69, 40, 40);
-		btnMult.setBounds(10, 69, 40, 40);
+		btnPlus.setFont(new Font("Tahoma", Font.PLAIN, 8));
+		btnPlus.setBounds(258, 113, 65, 40);
+		btnSubt.setBounds(171, 112, 65, 40);
+		btnDivi.setBounds(96, 112, 65, 40);
+		btnMult.setBounds(20, 112, 65, 40);
 
 		// Properties of advanced buttons
 		btnPow2.setFont(new Font("Tahoma", Font.PLAIN, 7));
-		btnPow2.setBounds(111, 120, 40, 40);
+		btnPow2.setBounds(21, 163, 40, 40);
 		btnPow3.setFont(new Font("Tahoma", Font.PLAIN, 7));
-		btnPow3.setBounds(61, 120, 40, 40);
+		btnPow3.setBounds(71, 163, 40, 40);
 		btnPow4.setFont(new Font("Tahoma", Font.PLAIN, 6));
-		btnPow4.setBounds(10, 120, 40, 40);
+		btnPow4.setBounds(121, 164, 40, 40);
 		btnPow5.setFont(new Font("Tahoma", Font.PLAIN, 6));
-		btnPow5.setBounds(111, 171, 40, 40);
+		btnPow5.setBounds(181, 163, 40, 40);
 		btnPow6.setFont(new Font("Tahoma", Font.PLAIN, 6));
-		btnPow6.setBounds(61, 171, 40, 40);
+		btnPow6.setBounds(233, 164, 40, 40);
 		btnPow7.setFont(new Font("Tahoma", Font.PLAIN, 6));
-		btnPow7.setBounds(10, 171, 40, 40);
-		
-		btnEqual.setBounds(161, 120, 40, 91);
+		btnPow7.setBounds(283, 164, 40, 40);
 	}
 
 	public void addComponents() {
 		
-		frmMadbarCalculator.getContentPane().add(textField);
+		frmMadbarCalculator.getContentPane().add(textField1Nr);
 		
 		frmMadbarCalculator.getContentPane().add(btnPlus);
 		frmMadbarCalculator.getContentPane().add(btnSubt);
@@ -116,7 +129,20 @@ public class MainFrame {
 		frmMadbarCalculator.getContentPane().add(btnPow6);
 		frmMadbarCalculator.getContentPane().add(btnPow7);
 		
-		frmMadbarCalculator.getContentPane().add(btnEqual);		
+		
+		frmMadbarCalculator.getContentPane().add(textField2Nr);
+		lblPickNr.setVerticalAlignment(SwingConstants.TOP);
+		lblPickNr.setBounds(20, 11, 298, 16);
+		
+		frmMadbarCalculator.getContentPane().add(lblPickNr);
+		lblOperation.setBounds(104, 89, 141, 14);
+		
+		frmMadbarCalculator.getContentPane().add(lblOperation);
+		lblResult.setBounds(20, 214, 40, 28);
+		
+		frmMadbarCalculator.getContentPane().add(lblResult);
+		
+		frmMadbarCalculator.getContentPane().add(textFieldResult);
 	}
 
 	public void addActionListeners() {
@@ -124,8 +150,15 @@ public class MainFrame {
 		btnPlus.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				// System.out.println("Clickeddd!");
-				frmMadbarCalculator.getContentPane()
-						.setBackground(Color.red);
+//				frmMadbarCalculator.getContentPane().setBackground(Color.red);
+				
+		
+				/*Hämta siffra från text field. 
+				 * spara i en variabel? 
+				 * Rensa textfield
+				 * 
+				 * 
+				 * */
 			}
 		});
 		btnSubt.addActionListener(new ActionListener() {
@@ -164,11 +197,6 @@ public class MainFrame {
 			}
 		});
 		btnPow7.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
-		
-		btnEqual.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
