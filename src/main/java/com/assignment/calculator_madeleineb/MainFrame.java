@@ -42,12 +42,15 @@ public class MainFrame {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+		//Properties of frame
+	//flyttade han denna rad utanför som varialbel? 
 		frmMadbarCalculator = new JFrame();
 		frmMadbarCalculator.setTitle("MadBar Calculator");
 		frmMadbarCalculator.setBounds(100, 100, 450, 300);
 		frmMadbarCalculator.setDefaultCloseOperation(
 				JFrame.EXIT_ON_CLOSE);
 		frmMadbarCalculator.getContentPane().setLayout(null);
+		frmMadbarCalculator.setVisible(true);
 		
 		JLabel lblMadBarCal = new JLabel("MadBar Calculator");
 		lblMadBarCal.setBounds(166, 11, 92, 23);
