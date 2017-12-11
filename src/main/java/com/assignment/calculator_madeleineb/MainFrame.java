@@ -124,30 +124,42 @@ public class MainFrame {
 		lblNrToRaise.setBounds(20, 142, 298, 14);
 
 		// Properties of basic buttons
-		btnPlus.setFont(new Font("Tahoma", Font.PLAIN, 8));
+		btnPlus.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnPlus.setBounds(258, 75, 65, 40);
+		btnPlus.setMargin(new Insets(1,1,1,1));
+		btnSubt.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnSubt.setBounds(171, 74, 65, 40);
+		btnSubt.setMargin(new Insets(1,1,1,1));
+		btnDivi.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnDivi.setBounds(96, 74, 65, 40);
+		btnDivi.setMargin(new Insets(1,1,1,1));
+		btnMult.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnMult.setBounds(20, 74, 65, 40);
+		btnMult.setMargin(new Insets(1,1,1,1));
 
 		// Properties of advanced buttons
-		btnPow2.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		btnPow2.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnPow2.setMargin(new Insets(1,1,1,1));
 		btnPow2.setBounds(20, 213, 40, 40);
-		btnPow3.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnPow3.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnPow3.setMargin(new Insets(1,1,1,1));
-//		setMargin(new Insets(1,1,1,1));
 		btnPow3.setBounds(69, 213, 40, 40);
-		btnPow4.setFont(new Font("Tahoma", Font.PLAIN, 6));
+		btnPow4.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnPow4.setBounds(119, 213, 40, 40);
-		btnPow5.setFont(new Font("Tahoma", Font.PLAIN, 6));
+		btnPow4.setMargin(new Insets(1,1,1,1));
+		btnPow5.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnPow5.setBounds(181, 213, 40, 40);
-		btnPow6.setFont(new Font("Tahoma", Font.PLAIN, 6));
+		btnPow5.setMargin(new Insets(1,1,1,1));
+		btnPow6.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnPow6.setBounds(231, 213, 40, 40);
-		btnPow7.setFont(new Font("Tahoma", Font.PLAIN, 6));
+		btnPow6.setMargin(new Insets(1,1,1,1));
+		btnPow7.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnPow7.setBounds(283, 213, 40, 40);
+		btnPow7.setMargin(new Insets(1,1,1,1));
 		
-		btnReset.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		btnReset.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnReset.setBounds(20, 303, 303, 32);
+		btnReset.setMargin(new Insets(1,1,1,1));
 		
 		//Other
 		separator.setBounds(20, 126, 303, 16);
