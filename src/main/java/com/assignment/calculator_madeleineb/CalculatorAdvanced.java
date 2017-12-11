@@ -31,7 +31,7 @@ public class CalculatorAdvanced
 	
 	public double pow7(double number) {
 		return Math.round((Math.pow(number, 7))*100)/100.00;
-		
+
 	}
 
 	//Not functional yet
