@@ -1,7 +1,7 @@
 package com.assignment.calculator_madeleineb;
 
 /**
- * This is an sub class called CalculatorBasic that implements
+ * This is a sub class called CalculatorBasic that implements
  * CalculatorBasicOperationsInterface. It has 4 methods (basic mathematics
  * operations).
  * 

@@ -1,7 +1,7 @@
 package com.assignment.calculator_madeleineb;
 
 /**
- * This is an sub class called CalculatorAdvanced that implements
+ * This is a sub class called CalculatorAdvanced that implements
  * CalculatorAdvancedOperationsInterface. It has 6 methods (mathematics
  * operations). 
  * 

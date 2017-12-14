@@ -1101,7 +1101,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+pow7(numberToRace: double, numberPower): double",
+											"text": "+pow7(number: double): double",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -2114,7 +2114,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+pow7(numberToRace: double, numberPower): double",
+											"text": "+pow7(number: double): double",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -3785,26 +3785,11 @@
 									"_parent": {
 										"$ref": "AAAAAAFgJ/RaXCVsGPQ="
 									},
-									"name": "numberToRace",
+									"name": "number",
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
 									"type": "double",
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "in"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFgJ/V7YCV09a0=",
-									"_parent": {
-										"$ref": "AAAAAAFgJ/RaXCVsGPQ="
-									},
-									"name": "numberPower",
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
@@ -4485,26 +4470,11 @@
 									"_parent": {
 										"$ref": "AAAAAAFgKAXC3ScG9tY="
 									},
-									"name": "numberToRace",
+									"name": "number",
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
 									"type": "double",
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "in"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFgKAXP+ycOusY=",
-									"_parent": {
-										"$ref": "AAAAAAFgKAXC3ScG9tY="
-									},
-									"name": "numberPower",
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
