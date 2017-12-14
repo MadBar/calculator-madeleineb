@@ -5,13 +5,14 @@ package com.assignment.calculator_madeleineb;
  * methods (basic mathematic operations). The sub class CalculatorBasic
  * implements this Interface.
  * 
+ * @version 1.0
  * @author Madeleine Barwen
  */
 public interface CalculatorBasicOperationsInterface {
 
 	/**
-	 * @param firstNr
-	 * @param secondNr
+	 * @param  firstNr - the first number of the operation
+	 * @param  secondNr - the second number of the operations
 	 * @return
 	 */
 	double add(double firstNr, double secondNr);

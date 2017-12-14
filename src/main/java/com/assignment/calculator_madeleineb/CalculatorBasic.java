@@ -5,6 +5,7 @@ package com.assignment.calculator_madeleineb;
  * CalculatorBasicOperationsInterface. It has 4 methods (basic mathematics
  * operations).
  * 
+ * @version 1.0
  * @author Madeleine Barwen
  */
 public class CalculatorBasic

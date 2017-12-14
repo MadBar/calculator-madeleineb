@@ -5,6 +5,7 @@ package com.assignment.calculator_madeleineb;
  * methods (basic mathematics operations). The sub class CalculatorAdvanced
  * implements this Interface.
  * 
+ * @version 1.0
  * @author Madeleine Barwen
  */
 public interface CalculatorAdvancedOperationsInterface {

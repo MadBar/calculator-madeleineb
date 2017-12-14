@@ -5,6 +5,7 @@ package com.assignment.calculator_madeleineb;
  * CalculatorAdvancedOperationsInterface. It has 6 methods (mathematics
  * operations). 
  * 
+ * @version 1.0
  * @author Madeleine Barwen
  */
 public class CalculatorAdvanced
