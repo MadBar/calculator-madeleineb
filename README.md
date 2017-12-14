@@ -24,3 +24,5 @@ It still breaks after removing the BP..!!
   Here firstNr is always 0, so when getting randomed second 0, inside the method - it checks for Infinite, and when two 0 the result becomes NaN..! So maybe add a check for NaN in that statement aswell..
   1. 	//QUESTION: Do we really need try catch? Program never seems so access it? Divition tests
 1. //QUESTION: Is ther ANY point to have a loop here? Maybe? testDivideSecondZero
+1. //Q: Javadoc - ok to only have in interfaces? 
+1. //Q: target (therefor the index) don't get added to github. Should it? 
