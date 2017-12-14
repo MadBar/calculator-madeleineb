@@ -13,14 +13,58 @@
 <!-- These are the properties of our pom.xml -->
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!-- new -->
+    <junit.version>4.11</junit.version>
+    <java.version>1.8</java.version>
+    <jacoco.version>0.7.7.201606060606</jacoco.version>
+     <!-- end new -->
   </properties>
 
+<!-- dependencies of pom.xml -->
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+       <!-- new -->
+      <version>${junit.version}</version>
+<!-- added and changed this in properties  <version>3.8.1</version> -->    
+      <!-- end new -->
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+     <!-- new -->
+  <build>
+  	<plugins>
+  		<plugin>
+  			<artifactId>maven-compiler-plugin</artifactId>
+  			<version>3.1</version>
+  				<configuration>
+  					<source>${java.version}</source>
+  					<target>${java.version}</target>
+  				</configuration>
+  		</plugin>
+  		<plugin>
+  			<groupId>org.jacoco</groupId>
+  			<artifactId>jacoco-maven-plugin</artifactId>
+  			<version>${jacoco.version}</version>
+  			<executions>
+  				<execution>
+  					<id>default-prepare-agent</id>
+  					<goals>
+  						<goal>prepare-agent</goal>
+  					</goals>
+  				</execution>
+  				<execution>
+  					<id>default-report</id>
+  					<phase>prepare-package</phase>
+  					<goals>
+  						<goal>report</goal>
+  					</goals>
+  				</execution>
+  			</executions>
+  		</plugin>
+  	</plugins>
+  </build>
+    <!-- end new -->
 </project>
