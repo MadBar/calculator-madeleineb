@@ -1,5 +1,9 @@
 package com.assignment.calculator_madeleineb;
 
+/**
+ * @author mads
+ *
+ */
 public class CalculatorAdvanced
 		implements CalculatorAdvancedOperationsInterface {
 
