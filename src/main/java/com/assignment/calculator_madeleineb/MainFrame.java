@@ -99,7 +99,7 @@ public class MainFrame {
 
 		// Properties of Text Fields
 		textFieldResult.setEditable(false);
-		textFieldResult.setBounds(69, 264, 254, 28);
+		textFieldResult.setBounds(79, 264, 244, 28);
 		textFieldResult.setColumns(10);
 		textField1Nr.setToolTipText("insert number");
 		textField1Nr.setHorizontalAlignment(SwingConstants.RIGHT);
@@ -119,7 +119,7 @@ public class MainFrame {
 		lblPickNr.setBounds(20, 11, 303, 16);
 		lblOperation.setHorizontalAlignment(SwingConstants.CENTER);
 		lblOperation.setBounds(20, 57, 298, 14);
-		lblResult.setBounds(20, 264, 47, 28);
+		lblResult.setBounds(20, 264, 65, 28);
 		lblNrToRaise.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNrToRaise.setBounds(20, 142, 298, 14);
 
