@@ -45,5 +45,4 @@ public interface CalculatorAdvancedOperationsInterface {
 	 */
 	double pow7(double number);
 
-	//double powY(double numberToRaise, double powNumber);
 }

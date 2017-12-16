@@ -30,7 +30,6 @@ public class CalculatorAdvanced
 
 		return Math.round((Math.pow(number, 3)) * 100)
 				/ 100.00;
-		// return Math.pow(number, 3);
 	}
 
 	/**
@@ -76,13 +75,5 @@ public class CalculatorAdvanced
 				/ 100.00;
 
 	}
-
-	// Not functional yet
-	// public double powY(double numberToRaise,
-	// double powNumber) {
-	// return Math.round((Math.pow(numberToRaise, powNumber))*100)/100.00;
-	//
-	//// return Math.pow(numberToRaise, powNumber);
-	// }
 
 }

@@ -10,8 +10,7 @@ public class CalculatorBasicMultiplyTest {
 
 	CalculatorBasic cb = new CalculatorBasic();
 	Random r = new Random();
-	static final Logger LOG = Logger
-			.getLogger(CalculatorBasic.class.getName());
+	static final Logger LOG = Logger.getLogger(CalculatorBasic.class.getName());
 	DecimalFormat df = new DecimalFormat();
 
 	@Test
@@ -23,22 +22,14 @@ public class CalculatorBasicMultiplyTest {
 		double resultFromMethod = 0;
 
 		for (int i = 0; i < 50; i++) {
-			firstRandomNr = Double.valueOf(
-					df.format(r.nextDouble() * 10));
-			secondRandomNr = Double.valueOf(
-					df.format(r.nextDouble() * 10));
+			firstRandomNr = Double.valueOf(df.format(r.nextDouble() * 10));
+			secondRandomNr = Double.valueOf(df.format(r.nextDouble() * 10));
 			result = firstRandomNr * secondRandomNr;
-			resultFromMethod = Math.round(cb.multiply(
-					firstRandomNr, secondRandomNr));
+			resultFromMethod = Math.round(cb.multiply(firstRandomNr, secondRandomNr));
 
-			LOG.info(
-					"Testing the method Multiply positive with: "
-							+ firstRandomNr + " and "
-							+ secondRandomNr
-							+ ". Result from test: "
-							+ result
-							+ ", result from method: "
-							+ resultFromMethod);
+			LOG.info("Testing the method Multiply positive with: " + firstRandomNr
+					+ " and " + secondRandomNr + ". Result from test: " + result
+					+ ", result from method: " + resultFromMethod);
 			assertEquals(resultFromMethod, result, 1);
 		}
 
@@ -53,22 +44,14 @@ public class CalculatorBasicMultiplyTest {
 		double resultFromMethod = 0;
 
 		for (int i = 0; i < 50; i++) {
-			firstRandomNr = Double.valueOf(
-					df.format(r.nextDouble() * -10));
-			secondRandomNr = Double.valueOf(
-					df.format(r.nextDouble() * -10));
+			firstRandomNr = Double.valueOf(df.format(r.nextDouble() * -10));
+			secondRandomNr = Double.valueOf(df.format(r.nextDouble() * -10));
 			result = firstRandomNr * secondRandomNr;
-			resultFromMethod = Math.round(cb.multiply(
-					firstRandomNr, secondRandomNr));
+			resultFromMethod = Math.round(cb.multiply(firstRandomNr, secondRandomNr));
 
-			LOG.info(
-					"Testing the method Multiply negative with: "
-							+ firstRandomNr + " and "
-							+ secondRandomNr
-							+ ". Result from test: "
-							+ result
-							+ ", result from method: "
-							+ resultFromMethod);
+			LOG.info("Testing the method Multiply negative with: " + firstRandomNr
+					+ " and " + secondRandomNr + ". Result from test: " + result
+					+ ", result from method: " + resultFromMethod);
 			assertEquals(resultFromMethod, result, 1);
 		}
 
@@ -83,20 +66,13 @@ public class CalculatorBasicMultiplyTest {
 		double resultFromMethod = 0;
 
 		for (int i = 0; i < 50; i++) {
-			secondRandomNr = Double.valueOf(
-					df.format(r.nextDouble() * 10));
+			secondRandomNr = Double.valueOf(df.format(r.nextDouble() * 10));
 			result = firstRandomNr * secondRandomNr;
-			resultFromMethod = Math.round(cb.multiply(
-					firstRandomNr, secondRandomNr));
+			resultFromMethod = Math.round(cb.multiply(firstRandomNr, secondRandomNr));
 
-			LOG.info(
-					"Testing the method Multiply first zero with: "
-							+ firstRandomNr + " and "
-							+ secondRandomNr
-							+ ". Result from test: "
-							+ result
-							+ ", result from method: "
-							+ resultFromMethod);
+			LOG.info("Testing the method Multiply first zero with: " + firstRandomNr
+					+ " and " + secondRandomNr + ". Result from test: " + result
+					+ ", result from method: " + resultFromMethod);
 			assertEquals(resultFromMethod, result, 1);
 		}
 
@@ -111,21 +87,14 @@ public class CalculatorBasicMultiplyTest {
 		double resultFromMethod = 0;
 
 		for (int i = 0; i < 50; i++) {
-			firstRandomNr = Double.valueOf(
-					df.format(r.nextDouble() * 10));
+			firstRandomNr = Double.valueOf(df.format(r.nextDouble() * 10));
 
 			result = firstRandomNr * secondRandomNr;
-			resultFromMethod = Math.round(cb.multiply(
-					firstRandomNr, secondRandomNr));
+			resultFromMethod = Math.round(cb.multiply(firstRandomNr, secondRandomNr));
 
-			LOG.info(
-					"Testing the method Multiply second zero with: "
-							+ firstRandomNr + " and "
-							+ secondRandomNr
-							+ ". Result from test: "
-							+ result
-							+ ", result from method: "
-							+ resultFromMethod);
+			LOG.info("Testing the method Multiply second zero with: " + firstRandomNr
+					+ " and " + secondRandomNr + ". Result from test: " + result
+					+ ", result from method: " + resultFromMethod);
 			assertEquals(resultFromMethod, result, 1);
 		}
 
@@ -137,16 +106,11 @@ public class CalculatorBasicMultiplyTest {
 		double firstRandomNr = 0;
 		double secondRandomNr = 0;
 		double result = firstRandomNr * secondRandomNr;
-		double resultFromMethod = Math.round(
-				cb.multiply(firstRandomNr, secondRandomNr));
+		double resultFromMethod = Math.round(cb.multiply(firstRandomNr, secondRandomNr));
 
-		LOG.info(
-				"Testing the method Multiply both zeros with: "
-						+ firstRandomNr + " and "
-						+ secondRandomNr
-						+ ". Result from test: " + result
-						+ ", result from method: "
-						+ resultFromMethod);
+		LOG.info("Testing the method Multiply both zeros with: " + firstRandomNr + " and "
+				+ secondRandomNr + ". Result from test: " + result
+				+ ", result from method: " + resultFromMethod);
 		assertEquals(resultFromMethod, result, 0);
 
 	}

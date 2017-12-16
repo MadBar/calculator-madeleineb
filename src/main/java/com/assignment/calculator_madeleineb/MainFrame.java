@@ -18,7 +18,6 @@ public class MainFrame {
 	CalculatorBasic cb = new CalculatorBasic();
 	CalculatorAdvanced ca = new CalculatorAdvanced();
 
-	// Why do they get the property Final? Auto.
 	// Components Attributes
 	private JFrame frmMadbarCalculator = new JFrame();
 	JSeparator separator = new JSeparator();
@@ -88,7 +87,6 @@ public class MainFrame {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		// frmMadbarCalculator = new JFrame();
 
 		// Properties of Frame
 		frmMadbarCalculator.setTitle("MadBar Calculator");
@@ -198,8 +196,7 @@ public class MainFrame {
 		// Basic
 		btnPlus.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				// System.out.println("Clickeddd!");
-				// frmMadbarCalculator.getContentPane().setBackground(Color.red);
+
 				textFieldResult.setText("");
 				textFieldNrToRaise.setText("");
 				try {
@@ -264,6 +261,7 @@ public class MainFrame {
 			public void actionPerformed(ActionEvent e) {
 				textField1Nr.setText("");
 				textField2Nr.setText("");
+				textFieldResult.setText("");
 
 				try {
 					firstNr = Double.parseDouble(textFieldNrToRaise.getText());
@@ -280,6 +278,7 @@ public class MainFrame {
 			public void actionPerformed(ActionEvent e) {
 				textField1Nr.setText("");
 				textField2Nr.setText("");
+				textFieldResult.setText("");
 
 				try {
 					firstNr = Double.parseDouble(textFieldNrToRaise.getText());
@@ -296,6 +295,7 @@ public class MainFrame {
 			public void actionPerformed(ActionEvent e) {
 				textField1Nr.setText("");
 				textField2Nr.setText("");
+				textFieldResult.setText("");
 
 				try {
 					firstNr = Double.parseDouble(textFieldNrToRaise.getText());
@@ -312,6 +312,7 @@ public class MainFrame {
 			public void actionPerformed(ActionEvent e) {
 				textField1Nr.setText("");
 				textField2Nr.setText("");
+				textFieldResult.setText("");
 				try {
 					firstNr = Double.parseDouble(textFieldNrToRaise.getText());
 
@@ -328,6 +329,7 @@ public class MainFrame {
 			public void actionPerformed(ActionEvent e) {
 				textField1Nr.setText("");
 				textField2Nr.setText("");
+				textFieldResult.setText("");
 
 				try {
 					firstNr = Double.parseDouble(textFieldNrToRaise.getText());
@@ -343,6 +345,7 @@ public class MainFrame {
 			public void actionPerformed(ActionEvent e) {
 				textField1Nr.setText("");
 				textField2Nr.setText("");
+				textFieldResult.setText("");
 
 				try {
 					firstNr = Double.parseDouble(textFieldNrToRaise.getText());
