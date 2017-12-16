@@ -5,7 +5,6 @@ import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.logging.Logger;
 import org.junit.Test;
-//testing to change something by this comment to try and delete files on github with a push head
 
 public class CalculatorBasicSubtractTest {
 	CalculatorBasic cb = new CalculatorBasic();
